@@ -5,8 +5,7 @@
   "main": "dist/Withings.js",
   "typings": "dist/Withings.d.ts",
   "scripts": {
-    "start": "typings install",
-    "test": "gulp"
+    "start": "typings install"
   },
   "files": [
     "dist/"

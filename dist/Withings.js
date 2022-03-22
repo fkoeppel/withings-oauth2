@@ -400,9 +400,9 @@ class Withings {
     }
 }
 //API EndPoints
-Withings.requestToken = "https://oauth.withings.com/account/request_token";
-Withings.accessToken = "https://oauth.withings.com/account/access_token";
-Withings.authorize = "https://oauth.withings.com/account/authorize";
+Withings.requestToken = "https://wbsapi.withings.net/v2/oauth2";
+Withings.accessToken = "https://wbsapi.withings.net/v2/oauth2";
+Withings.authorize = "https://account.withings.com/oauth2_user/authorize2";
 exports.Withings = Withings;
 
 //# sourceMappingURL=Withings.js.map
