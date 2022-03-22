@@ -12,10 +12,9 @@ var mocha = require('gulp-mocha');
 var rootDir = "file://" + __dirname;
 process.on('uncaughtException', console.error.bind(console));
 
-gulp.task('default', ['test'], function () {
+gulp.task('default', function () {
 
 });
-
 
 // https://www.npmjs.com/package/gulp-typescript
 gulp.task("compile-ts", [], function () {
@@ -40,10 +39,4 @@ gulp.task("compile-ts", [], function () {
                 .pipe(gulp.dest('dist'))
         ]
     );
-});
-
-
-gulp.task('test', function () {
-    return gulp.src('test/**-spec.js', {read: false})
-        .pipe(mocha({reporter: 'nyan'}));
 });
